@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct personnage{
+    
+    var id = UUID()
+    var image: String
+    var nom : String
+    var prenom : String
+    var type : String
+}
+
