@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct personnage{
+struct personnage: Identifiable{
     
     var id = UUID()
     var image: String
@@ -17,19 +17,27 @@ struct personnage{
 }
 
 
-var 1 = personnage(image: "", nom: "Sanchez", prenom: "Rick", type: "Hummain"),
-var 2 = personnage(image: "", nom: "Smith", prenom: "Morty", type: "Hummain"),
-var 3 = personnage(image: "", nom: "Smith", prenom: "Summer", type: "Hummain"),
-var 4 = personnage(image: "", nom: "Smith", prenom: "Beth", type: "Hummain"),
-var 5 = personnage(image: "", nom: "Smith", prenom: "Smith", type: "Hummain"),
-var 6 = personnage(image: "", nom: "ClusterPrincess", prenom: "Abadango", type: "Alien"),
-var 7 = personnage(image: "", nom: "Lincler", prenom: "Abradolf", type: "Hummain"),
-var 8 = personnage(image: "", nom: "Rick", prenom: "Adjudicator", type: "Hummain"),
-var 9 = personnage(image: "", nom: "Director", prenom: "Agency", type: "Hummain"),
-var 10 = personnage(image: "", nom: "Rails", prenom: "Alan", type: "Hummain"),
-var 11  = personnage(image: "", nom: "Einstein ", prenom: "Albert", type: "Hummain"),
-var 12 = personnage(image: "", nom: "", prenom: "Alexander", type: "Hummain"),
-var 13 = personnage(image: "", nom: "Googah ", prenom: "Alien", type: "Alien")
+var personnages = [
+    
+    personnage(image: "ricksanchez", nom: "Sanchez", prenom: "Rick", type: "Human"),
+    personnage(image: "MortySmith", nom: "Smith", prenom: "Morty", type: "Human"),
+    personnage(image: "SummerSmith", nom: "Smith", prenom: "Summer", type: "Human"),
+    personnage(image: "Beth", nom: "Smith", prenom: "Beth", type: "Human"),
+    personnage(image: "jerrySmith", nom: "Smith", prenom: "Jerry", type: "Human"),
+    personnage(image: "AbadangoCluster", nom: "Cluster Princess", prenom: "Abadango", type: "Alien"),
+    personnage(image: "AbradolfLincler", nom: "Lincler", prenom: "Abradolf", type: "Human"),
+    personnage(image: "AdjudicatorRick", nom: "Rick", prenom: "Adjudicator", type: "Human"),
+    personnage(image: "Agency Director", nom: "Director", prenom: "Agency", type: "Human"),
+    personnage(image: "Alan", nom: "Rails", prenom: "Alan", type: "Human"),
+    personnage(image: "AlbertEinstein", nom: "Einstein ", prenom: "Albert", type: "Human"),
+    personnage(image: "alexander", nom: "", prenom: "Alexander", type: "Human"),
+    personnage(image: "AlienGoogah", nom: "Googah ", prenom: "Alien", type: "Alien")
+
+
+
+]
+
+
 
  
 
