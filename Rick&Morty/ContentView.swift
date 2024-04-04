@@ -28,27 +28,35 @@ struct ContentView: View {
                                 .bold()
                             
                             
+                            
                                 Text(personnage.nom)
                                 .foregroundColor(.green)
                                 .bold()
+                            
+                            
+                            
+                            
+                            
                      
                         } // fin Hstack
                         
                         
                         
-                        VStack{
-                            Text(personnage.type)
-                                .bold()
-                                .padding(.leading, 110)
-                                .padding(.top, -40)
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    } // navigation link
+                    
+                    
 
-                        } // fin vstack
-                        
-                        
-                        
-                        
-                        
-                    }
+                    } // fin vstack
+                
                     
                 } // fin for each
             } // fin vstack
@@ -70,7 +78,6 @@ struct ContentView: View {
         
         } // FIN body
     
-    } // FIN struct
 
 #Preview {
     ContentView()
