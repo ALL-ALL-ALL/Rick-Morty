@@ -45,6 +45,7 @@ struct ContentView: View {
 
                                     Image(systemName: "arrowshape.right.fill")
                                         .foregroundColor(.green)
+                                        .padding()
                                     
 
                                 } // fin Hstack
