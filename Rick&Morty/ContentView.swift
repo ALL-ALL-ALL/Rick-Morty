@@ -6,23 +6,31 @@
 //
 
 import SwiftUI
-
+import UIKit
 
 
 struct ContentView: View {
     
+   
+    
     var body: some View {
+
         
         
         NavigationView{
             ScrollView{
                 
                 ZStack {
+                    
                     Color(.black)
                     VStack(alignment: .leading){
                         
                         ForEach(lespersonnages){personnage in
-                            NavigationLink(destination: detailView(personnage:personnage)){
+                            
+                            NavigationLink(destination:
+                                            
+                                            detailView(personnage:personnage)){
+                                
                                 
                                 HStack{
                                     Image(personnage.image)
@@ -50,7 +58,9 @@ struct ContentView: View {
 
                                 } // fin Hstack
                                 
+                                
                             } // navigation link
+                            
                             Text(personnage.type)
                                 .foregroundColor(.gray)
                                 .bold()
@@ -60,17 +70,24 @@ struct ContentView: View {
 
 
                             } // fin foreach
+                        
 
 
                     } // fin vstack
+                    
                 } // fin ztack
                 
                 
             } // fin scroll view
+            
             .ignoresSafeArea()
             .navigationTitle("Rick and Morty")
-            .navigationBarTitleDisplayMode(.inline) // Pour afficher le titre dans une seule ligne
+            .navigationBarTitleDisplayMode(.inline) //pour le mettre en ligne au milieu
+
             
+
+                              
+           
 
 
 
@@ -100,6 +117,7 @@ struct ContentView: View {
             
           
 } // FIN struct
+
     
 
 #Preview {
